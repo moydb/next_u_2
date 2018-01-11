@@ -87,8 +87,14 @@ a:active {
 	text-align:center;	
 }
 .img_resp {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
+	padding:5px;
+	text-align:center;
+	margin:auto;
+	border:solid 2px;
+	-webkit-box-shadow: 2px 2px 2px #02010a;
+    -moz-box-shadow: 2px 2px 2px #02010a;
 }
 img#img1 {
    filter:blur(10px);
@@ -113,8 +119,8 @@ section#imagenes, #galeria{
 }
 .galeria{
 	border:solid 2px;
-	-webkit-box-shadow: 2px 2px 5px #02010a	;
-    -moz-box-shadow: 2px 2px 5px #02010a	;
+	-webkit-box-shadow: 2px 2px 5px #02010a;
+    -moz-box-shadow: 2px 2px 5px #02010a;
 }
 /*-------------------paisajes----------------------*/
 #img2{
@@ -130,8 +136,9 @@ section#imagenes, #galeria{
 }
 /*-----------------retratos------------------*/
 #img3{
-	text-align:center;	
+	text-align:center;
 }
+
 #img_ret{
 	border:solid 2px;
 	-webkit-box-shadow: 2px 2px 5px #82c3a6;
@@ -198,7 +205,7 @@ margin-bottom:5px;
 }
 
 /*moviles*/
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 899px) {
 	h1{
 	font-size:36px;
 	text-shadow: 2px 2px #02010a;
@@ -213,18 +220,29 @@ margin-bottom:5px;
   background-color:#5b7989;
 }
 .menu ul li {
-  display:inline-block;
+  /*display:inline-block;*/
   list-style-type: none;
   text-align: center;
 }
 #menu ul li a 
 {
 	display: block;
-	padding: 0 7px 0 7px;
+	padding: 0px;
 	color: #FFFFFF;
 }
   #contenido{
 	width:100%;
 }
-  
+  /*-------------------------------------------galerias------------------------------------------------------------*/
+.flex_gal {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+  	flex-direction:column;
+}
+.flex_gal .col {
+	display: flex;
+  	flex-direction:column;
+	justify-content: center;
+}
 }
